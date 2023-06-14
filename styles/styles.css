@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Space Mono', monospace;
+    font-weight: 700;
+}
+
+main{
+    background-color:  #CCA9DD;
+    height: 100vh;
+}
+header{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+.calc-cont{
+    background-color: #fff;
+    width: 650px;
+    height: 350px;
+    margin: 10vh 26vw;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 325px);
+}
+.calculator{
+    padding-top: 15px;
+    margin-left: 20px;
+}
+input{
+    margin-bottom: 8px;
+}
+
+input[id="bill"]{
+    border: none;
+    border-radius: 8px;
+    background-color: #faf3fb;
+    display: flex;
+    padding: 5px 10px;
+    width: 20vw;
+}
+
+.field input {
+    font-size: 1em;
+    padding-left: 13vw;
+}
+  
+#bill{
+    background: url(../images/icon-dollar.svg) #faf3fb no-repeat;
+    background-position: 9px 10px;
+}
+
+input[id="tip-btn"]{
+    border: none;
+    background-color: #faf3fb;
+    display: inline-block;
+    width: 6vw;
+    height: 9vh;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+input[id="people"]{
+    border: none;
+    border-radius: 8px;
+    background-color: #faf3fb;
+    display: flex;
+    padding: 5px 10px;
+    width: 20vw;
+}
+.people, .tip{
+    margin-top: 10px;
+    padding: 5px;
+}
+
+p{
+    padding-bottom: 5px;
+}
+
+.people input{
+    font-size: 1em;
+    padding-left: 17vw;
+}
+
+#people{
+    background: url(../images/icon-person.svg) #faf3fb no-repeat;
+    background-position: 9px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
