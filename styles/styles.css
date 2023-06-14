@@ -15,6 +15,7 @@ header{
     display: flex;
     justify-content: center;
 }
+/* LEFT SIDE */
 .calc-cont{
     background-color: #fff;
     width: 650px;
@@ -53,12 +54,17 @@ input[id="bill"]{
 
 input[id="tip-btn"]{
     border: none;
-    background-color: #faf3fb;
+    background-color: #ba3aba;
     display: inline-block;
     width: 6vw;
     height: 9vh;
     margin-bottom: 4px;
     cursor: pointer;
+}
+
+input[id="tip-btn"]:hover{
+    background-color: #512168;
+    color: #fff;
 }
 
 input[id="people"]{
@@ -88,14 +94,58 @@ p{
     background-position: 9px 10px;
 }
 
+input:focus{
+    outline: none;
+    border:2px solid #ba3aba;
+}
+/* RIGHT SIDE */
+.results-cont{
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.results{
+    margin-top: 15px;
+    background-color: #ba3aba;
+    width: 280px;
+    height: 300px;
+    border-radius: 10px;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.results p{
+    font-size: 12px;
+}
+h5{
+    color: #512168;
+}
+.total-content, .tip-content{
+    margin-bottom: 12px;
+}
+
+button{
+    margin-top: 8vh;
+    width: 18vw;
+    height: 6vh;
+    background-color: #512168;
+    border: none;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #CCA9DD;
+}
 
 
 
-
-
-
-
-
-
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
+/* FOOTER */
+.attribution {
+    font-size: 11px; text-align: center; 
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+}
