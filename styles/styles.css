@@ -143,6 +143,9 @@ button:hover{
 
 
 /* FOOTER */
+footer{
+    background-color:  #CCA9DD;
+}
 .attribution {
     font-size: 11px; text-align: center; 
 }
