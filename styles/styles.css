@@ -29,9 +29,6 @@ header{
     padding-top: 15px;
     margin-left: 20px;
 }
-input{
-    margin-bottom: 8px;
-}
 
 input[id="bill"]{
     border: none;
@@ -51,18 +48,25 @@ input[id="bill"]{
     background: url(../images/icon-dollar.svg) #faf3fb no-repeat;
     background-position: 9px 10px;
 }
-
-input[id="tip-btn"]{
-    border: none;
-    background-color: #ba3aba;
-    display: inline-block;
-    width: 6vw;
-    height: 9vh;
-    margin-bottom: 4px;
-    cursor: pointer;
+.tip{
+    margin-top: 8px;
+}
+.tip p{
+    margin-bottom: 10px;
 }
 
-input[id="tip-btn"]:hover{
+#tip-btn{
+    border: none;
+    background-color: #ba3aba;
+    width: 7vw;
+    height: 8vh;
+    border-radius: 6px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+#tip-btn:hover{
     background-color: #512168;
     color: #fff;
 }
@@ -75,13 +79,9 @@ input[id="people"]{
     padding: 5px 10px;
     width: 20vw;
 }
-.people, .tip{
+.people{
     margin-top: 10px;
     padding: 5px;
-}
-
-p{
-    padding-bottom: 5px;
 }
 
 .people input{
@@ -108,12 +108,18 @@ input:focus{
     margin-top: 15px;
     background-color: #ba3aba;
     width: 280px;
-    height: 300px;
+    height: 320px;
     border-radius: 10px;
     padding: 20px 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #fff;
+}
+
+input[id="tip-btn"]::placeholder{
+    color:#fff;
+    padding-left: 8px;
 }
 
 .results p{
@@ -126,7 +132,7 @@ h5{
     margin-bottom: 12px;
 }
 
-button{
+button[type="submit"]{
     margin-top: 8vh;
     width: 18vw;
     height: 6vh;
@@ -136,7 +142,7 @@ button{
     color: #fff;
     cursor: pointer;
 }
-button:hover{
+button[type="submit"]:hover{
     background-color: #CCA9DD;
 }
 
