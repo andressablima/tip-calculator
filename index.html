@@ -1,94 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>TESTES CALC</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./styles/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Gorjetas</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <header>
-      <img class="logo" src="./images/logo.svg">
-    </header>
-    <div class="calc-cont">
-      <div class="calculator">
-        <div class="field">
-          <p>Bill</p>
-          <input type="number" id="bill" name="bill" placeholder="100.00"> 
-        </div>
-        <div class="tip">
-            <p>Select Tip %</p>
-            <div class="sel-tip">
-              <button id="tip-btn" value="0.05">5%</button>
-              <button id="tip-btn" value="0.1">10%</button>
-              <button id="tip-btn" value="0.15">15%</button>
-              <button id="tip-btn" value="0.25">25%</button>
-              <button id="tip-btn" value="0.50">50%</button>
-              <input type="number" id="tip-btn" placeholder="Custom">
+    <div class="logo"><img src="./images/logo.svg"></div>
+    <div class="tip-calculator">
+        <div class="left-side">
+            <label for="">Bill</label>
+            <input type="number" class="bill-input" id="bill">
+            <label for="">Select Tip % </label>
+            <div class="tip">
+                <div class="tips tip-5">5%</div>
+                <div class="tips tip-10 active-tip">10%</div>
+                <div class="tips tip-15">15%</div>
+                <div class="tips tip-25">25%</div>
+                <div class="tips tip-50">50%</div>
+                <div id="tip-custom"><input type="number" class="custom" placeholder="CUSTOM"></div>
             </div>
+            <div class="people">
+                <label for="">Number of People</label>
+            </div>
+            <input type="number" class="people-input">
         </div>
-        <div class="people">
-          <p>Number of People</p>
-          <input type="text" id="people" name="people" placeholder="5">
-        </div>
-      </div>
-
-      <div class="results-cont">
         <div class="results">
-          <div class="tip-content">
-            Total Tip:
-            R$ <span id="tip">0.00</span>
-            <p id="each">/ person</p>
-          </div>
-          <div class="total-content">
-            Total Amount:
-            R$ <span id="total">0.00</span>
-            <p id="each-total">/ person</p>
-          </div>
-          <button type="submit" class="reset"> RESET </button>
+            <div class="tip-amount">
+                <div class="text">
+                    <p>Tip Amount</p>
+                    <p class="person">/ person</p>
+                </div>
+                <div class="amount" id="tip-amount">$4.27</div>
+            </div>
+            <div class="total">
+                <div class="text">
+                    <p>Total</p>
+                    <p class="amount" id="total-amount">$32.79</p>
+                </div>
+            </div>
+            <div class="reset">RESET</div>
         </div>
-      </div>
     </div>
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.linkedin.com/in/andressablima/">Andressa Lima</a>.
-      </div>
-    </footer>
-  </main>
 
-
-  <script type="scripts" src="./scripts/scripts.js"></script>
+    <script rel="scripts" src="./scripts/scripts.js"></script>
 </body>
 </html>
-
-
-
-<!-- 
-<div class="results-cont">
-  <div class="results">
-    <div class="tip-content">
-      <h5 class="title-tip-amount">Tip Amount</h5>
-      <p>/ person</p>
-      <div class="tip-amount">
-        <h4>TIP AMOUNT</h4>
-      </div>
-    </div>
-    <div class="total-content">
-      <h5 class="title-total-amount">Tip Amount</h5>
-      <p>/ person</p>
-      <div class="total-amount">
-        <h4>TOTAL AMOUNT</h4>
-      </div>
-      
-    </div>
-    <button type="submit" class="reset"> RESET </button>
-  </div>
-</div>
-
--->
