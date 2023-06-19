@@ -14,14 +14,15 @@ body{
 .logo{
     text-align: center;
     margin-top: 1.7rem;
-    margin-bottom: 2.3rem;
+    margin-bottom: 2rem;
 }
 .tip-calculator{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    padding: 2rem;
-    border-radius: 1.4rem 1.4rem 0 0;
+    padding: 1rem;
+    border-radius: 1.4rem;
+    margin: 0 10px;
 }
 
 label{
@@ -78,6 +79,7 @@ input{
     margin-bottom: 2.4rem;
 }
 
+/* RIGHT SIDE - RESULTS*/
 .results{
     background-color: hsl(311, 100%, 15%);
     color: #fff;
@@ -85,13 +87,23 @@ input{
     border-radius: 12px;
 }
 
-.tip-amount, .total{
+.tip-amount {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.7rem;
 }
 
+#tip-amount{
+    font-weight: 500;
+}
+
+.total{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
+}
 .person{
     font-size: 12px;
     color: hsl(287, 23%, 92%);
@@ -120,9 +132,25 @@ input{
     width: 100%;
 }
 
+::placeholder{
+    font-size: 18px;
+    font-weight: 700;
+}
 .peopleLabel{
     display: flex;
     justify-content: space-between;
+}
+
+footer{
+    height: 10vh;
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer a{
+    text-decoration: none;
 }
 
 @media only screen and (min-width: 1000px) {
